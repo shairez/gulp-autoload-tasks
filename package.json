@@ -1,0 +1,24 @@
+{
+  "name": "gulp-autoload-tasks",
+  "version": "0.0.1",
+  "description": "Auto loads gulp tasks for large modular projects",
+  "author": "Shai Reznik",
+  "files": "index.js",
+  "dependencies": {
+    "wrench": "^1.5.8"
+  },
+  "devDependencies": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shairez/gulp-autoload-tasks"
+  },
+  "keywords": [
+    "gulp",
+    "load",
+    "tasks"
+  ],
+  "license": "MIT"
+
+}

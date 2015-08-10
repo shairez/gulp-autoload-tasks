@@ -31,7 +31,7 @@ gulp.task('default', ['uglify']);
 module.exports = function (gulp, plugins, config) {
 
 gulp.task('uglify', function () {
-    return gulp.src( config.src )
+    return gulp.src( config.src + '/*.js' )
                .pipe( plugins.uglify() )
                .pipe( gulp.dest( config.dist ) );
 })

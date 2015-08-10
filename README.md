@@ -56,7 +56,16 @@ var autoLoadTasks = require('gulp-autoload-tasks');
 
 ### autoLoadTasks(*gulp*, *plugins*, *config*, *gulpTasksDir*)
 
-Loads every file in the gulpTasksDir (`gulp_tasks` by default) with the following params - `gulp`, `plugins`, `config`. So that your module declaration looks like 
+Loads every file in the gulpTasksDir (`gulp_tasks` by default) with the following params - `gulp`, `plugins`, `config`. So that your module declaration looks like
+ 
+`gulpfile.js`:
+```javascript
+var autoLoadTasks = require('gulp-autoload-tasks');
+
+autoLoadTasks(gulp, plugins, config, gulpTaskDir);
+```
+
+`some_gulp_task.js`:
 ```javascript
 module.exports = function (gulp, plugins, config) {
     /* code goes here */

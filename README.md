@@ -1,5 +1,6 @@
 # gulp-autoload-tasks
 Auto loads tasks for large modular projects, including configuration object and reducing code (imports) duplication
+Loading code inspired by [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular) 's `gulpefile.js`
 
 ## Installation
 

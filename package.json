@@ -2,7 +2,7 @@
   "name": "gulp-autoload-tasks",
   "version": "0.0.1",
   "description": "Auto loads gulp tasks for large modular projects",
-  "author": "Shai Reznik",
+  "author": "Shai Reznik (http://www.hirez.io)",
   "files": "index.js",
   "dependencies": {
     "wrench": "^1.5.8"

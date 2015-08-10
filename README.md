@@ -23,17 +23,17 @@ var config = {
 
 require('gulp-autoload-tasks')(gulp, plugins, config);
 
-gulp.task('default', ['copy']);
+gulp.task('default', ['uglify']);
 
 ```
-`gulp_tasks/copy.js`:
+`gulp_tasks/uglify.js`:
 ```javascript
 module.exports = function (gulp, plugins, config) {
 
-gulp.task('copy', function () {
-    return gulp
-      .src( config.src + 'index.html' )
-      .pipe( gulp.dest( config.dist ) );
+gulp.task('uglify', function () {
+    gulp.src( config.src )
+        .pipe(plugins.uglify())
+        .pipe(gulp.dest( config.dist ));
 })
 ```
 
